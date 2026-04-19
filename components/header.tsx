@@ -37,11 +37,11 @@ export function Header() {
             </div>
             <div className="relative group">
               <button className="text-gray-700 hover:text-blue-600 transition-colors">
-                Courses
+                Courses ▼
               </button>
               <div className="absolute hidden group-hover:block bg-white border rounded-md shadow-lg py-2 mt-1">
-                <Link href="/full-courses" className="block px-4 py-2 hover:bg-gray-100">Full Courses</Link>
-                <Link href="/1-to-1" className="block px-4 py-2 hover:bg-gray-100">1 to 1 Sessions</Link>
+                <Link href="/courses" className="block px-4 py-2 hover:bg-gray-100">All Courses</Link>
+                <Link href="/self-study" className="block px-4 py-2 hover:bg-gray-100">Self Study</Link>
               </div>
             </div>
             <Link href="/self-study" className="text-gray-700 hover:text-blue-600 transition-colors">
@@ -93,12 +93,11 @@ export function Header() {
               </div>
               <div className="space-y-1">
                 <div className="font-medium text-gray-900">Courses</div>
-                <Link href="/full-courses" className="block pl-4 text-gray-700 hover:text-blue-600 py-1">Full Courses</Link>
-                <Link href="/1-to-1" className="block pl-4 text-gray-700 hover:text-blue-600 py-1">1 to 1 Sessions</Link>
+                <Link href="/courses" className="block pl-4 text-gray-700 hover:text-blue-600 py-1">All Courses</Link>
+                <Link href="/self-study" className="block pl-4 text-gray-700 hover:text-blue-600 py-1">Self Study</Link>
               </div>
               <Link href="/self-study" className="text-gray-700 hover:text-blue-600 py-2">Self Study</Link>
               <Link href="/about" className="text-gray-700 hover:text-blue-600 py-2">About Us</Link>
-              <Link href="/blog" className="text-gray-700 hover:text-blue-600 py-2">Blog</Link>
               <Link href="/contact" className="text-gray-700 hover:text-blue-600 py-2">Contact Us</Link>
               <Link href="/account" className="text-gray-700 hover:text-blue-600 py-2">My Account</Link>
             </nav>
