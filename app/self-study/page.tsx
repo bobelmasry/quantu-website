@@ -17,16 +17,16 @@ export default function SelfStudyPage() {
         {/* Hero Section */}
         <section className="py-20 px-4 bg-gradient-to-br from-green-50 via-blue-50 to-purple-50">
           <div className="container mx-auto text-center">
-            <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
+            <h1 className="text-4xl md:text-6xl font-bold text-gray-900 mb-6 leading-tight">
               The Complete{" "}
               <span className="bg-gradient-to-r from-green-600 to-blue-600 bg-clip-text text-transparent">
                 Self-Study System
               </span>
             </h1>
 
-            <p className="text-xl text-gray-600 mb-8 max-w-3xl mx-auto leading-relaxed">
-              Everything you need to achieve top grades — structured progress, expert materials, and flexible scheduling.
-            </p>
+              <p className="text-xl text-gray-600 mb-8 max-w-3xl mx-auto leading-relaxed font-medium">
+                Everything you need to achieve top grades &mdash; structured progress, expert materials, and flexible scheduling.
+              </p>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
               <Button size="lg" className="bg-gradient-to-r from-green-600 to-blue-600 hover:from-green-700 hover:to-blue-700">
@@ -80,10 +80,10 @@ export default function SelfStudyPage() {
         <section className="py-20 px-4 bg-white">
           <div className="container mx-auto">
             <div className="text-center mb-16">
-              <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+              <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4 uppercase tracking-wide">
                 HOW SELF-STUDY HUB WORKS?
               </h2>
-              <p className="text-lg text-gray-600">
+              <p className="text-lg text-gray-600 font-medium">
                 Simple 6-step process to achieve your academic goals
               </p>
             </div>
@@ -97,15 +97,15 @@ export default function SelfStudyPage() {
                 { step: 5, title: "Track progress on your dashboard", description: "Monitor your improvement with detailed analytics" },
                 { step: 6, title: "Achieve target grades", description: "Reach your academic goals with proven methods" },
               ].map((item, index) => (
-                <Card key={index} className="text-center hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
-                  <CardHeader>
-                    <div className="w-12 h-12 bg-gradient-to-r from-blue-500 to-purple-600 rounded-full flex items-center justify-center mx-auto mb-4 text-white font-bold">
+                <Card key={index} className="text-center hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 border-2 hover:border-blue-200">
+                  <CardHeader className="pb-4">
+                    <div className="w-16 h-16 bg-gradient-to-r from-blue-500 to-purple-600 rounded-full flex items-center justify-center mx-auto mb-4 text-white font-black text-2xl shadow-lg">
                       {item.step}
                     </div>
-                    <CardTitle className="text-lg">{item.title}</CardTitle>
+                    <CardTitle className="text-xl font-bold text-gray-900 leading-tight">{item.title}</CardTitle>
                   </CardHeader>
                   <CardContent>
-                    <p className="text-gray-600">{item.description}</p>
+                    <p className="text-gray-600 font-medium leading-relaxed">{item.description}</p>
                   </CardContent>
                 </Card>
               ))}
@@ -125,134 +125,134 @@ export default function SelfStudyPage() {
           <div className="container mx-auto">
             <div className="text-center mb-16">
               <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-                What's included in every course?
+                What&apos;s included in every course?
               </h2>
             </div>
 
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
               {/* Video Library */}
-              <Card className="hover:shadow-xl transition-shadow">
-                <CardHeader>
-                  <div className="flex items-center space-x-3">
-                    <div className="w-12 h-12 bg-red-100 rounded-lg flex items-center justify-center">
-                      <Play className="w-6 h-6 text-red-600" />
+              <Card className="hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 border-2 hover:border-red-200">
+                <CardHeader className="pb-4">
+                  <div className="flex items-center space-x-4">
+                    <div className="w-16 h-16 bg-gradient-to-r from-red-500 to-pink-600 rounded-xl flex items-center justify-center shadow-lg">
+                      <Play className="w-8 h-8 text-white" />
                     </div>
-                    <CardTitle className="text-xl">VIDEO LIBRARY</CardTitle>
+                    <CardTitle className="text-2xl font-black text-gray-900 tracking-wide">VIDEO LIBRARY</CardTitle>
                   </div>
                 </CardHeader>
                 <CardContent>
-                  <ul className="space-y-2">
-                    <li className="flex items-center space-x-2">
-                      <CheckCircle className="w-4 h-4 text-green-600" />
-                      <span>Topic Explanation Videos</span>
+                  <ul className="space-y-3">
+                    <li className="flex items-center space-x-3">
+                      <CheckCircle className="w-5 h-5 text-green-600 flex-shrink-0" />
+                      <span className="font-semibold text-gray-800">Topic Explanation Videos</span>
                     </li>
-                    <li className="flex items-center space-x-2">
-                      <CheckCircle className="w-4 h-4 text-green-600" />
-                      <span>Past Paper Solution Videos</span>
+                    <li className="flex items-center space-x-3">
+                      <CheckCircle className="w-5 h-5 text-green-600 flex-shrink-0" />
+                      <span className="font-semibold text-gray-800">Past Paper Solution Videos</span>
                     </li>
-                    <li className="flex items-center space-x-2">
-                      <CheckCircle className="w-4 h-4 text-green-600" />
-                      <span>Exam Technique Workshops</span>
+                    <li className="flex items-center space-x-3">
+                      <CheckCircle className="w-5 h-5 text-green-600 flex-shrink-0" />
+                      <span className="font-semibold text-gray-800">Exam Technique Workshops</span>
                     </li>
-                    <li className="flex items-center space-x-2">
-                      <CheckCircle className="w-4 h-4 text-green-600" />
-                      <span>Common Mistake Analysis</span>
+                    <li className="flex items-center space-x-3">
+                      <CheckCircle className="w-5 h-5 text-green-600 flex-shrink-0" />
+                      <span className="font-semibold text-gray-800">Common Mistake Analysis</span>
                     </li>
                   </ul>
                 </CardContent>
               </Card>
 
               {/* Study Materials */}
-              <Card className="hover:shadow-xl transition-shadow">
-                <CardHeader>
-                  <div className="flex items-center space-x-3">
-                    <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center">
-                      <BookOpen className="w-6 h-6 text-blue-600" />
+              <Card className="hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 border-2 hover:border-blue-200">
+                <CardHeader className="pb-4">
+                  <div className="flex items-center space-x-4">
+                    <div className="w-16 h-16 bg-gradient-to-r from-blue-500 to-indigo-600 rounded-xl flex items-center justify-center shadow-lg">
+                      <BookOpen className="w-8 h-8 text-white" />
                     </div>
-                    <CardTitle className="text-xl">STUDY MATERIALS</CardTitle>
+                    <CardTitle className="text-2xl font-black text-gray-900 tracking-wide">STUDY MATERIALS</CardTitle>
                   </div>
                 </CardHeader>
                 <CardContent>
-                  <ul className="space-y-2">
-                    <li className="flex items-center space-x-2">
-                      <CheckCircle className="w-4 h-4 text-green-600" />
-                      <span>Comprehensive Notes</span>
+                  <ul className="space-y-3">
+                    <li className="flex items-center space-x-3">
+                      <CheckCircle className="w-5 h-5 text-green-600 flex-shrink-0" />
+                      <span className="font-semibold text-gray-800">Comprehensive Notes</span>
                     </li>
-                    <li className="flex items-center space-x-2">
-                      <CheckCircle className="w-4 h-4 text-green-600" />
-                      <span>Classified Questions by Topic</span>
+                    <li className="flex items-center space-x-3">
+                      <CheckCircle className="w-5 h-5 text-green-600 flex-shrink-0" />
+                      <span className="font-semibold text-gray-800">Classified Questions by Topic</span>
                     </li>
-                    <li className="flex items-center space-x-2">
-                      <CheckCircle className="w-4 h-4 text-green-600" />
-                      <span>Past Paper Booklets (10+ years)</span>
+                    <li className="flex items-center space-x-3">
+                      <CheckCircle className="w-5 h-5 text-green-600 flex-shrink-0" />
+                      <span className="font-semibold text-gray-800">Past Paper Booklets (10+ years)</span>
                     </li>
-                    <li className="flex items-center space-x-2">
-                      <CheckCircle className="w-4 h-4 text-green-600" />
-                      <span>Model Answers with Marking Schemes</span>
+                    <li className="flex items-center space-x-3">
+                      <CheckCircle className="w-5 h-5 text-green-600 flex-shrink-0" />
+                      <span className="font-semibold text-gray-800">Model Answers with Marking Schemes</span>
                     </li>
                   </ul>
                 </CardContent>
               </Card>
 
               {/* Study Tools */}
-              <Card className="hover:shadow-xl transition-shadow">
-                <CardHeader>
-                  <div className="flex items-center space-x-3">
-                    <div className="w-12 h-12 bg-purple-100 rounded-lg flex items-center justify-center">
-                      <BarChart3 className="w-6 h-6 text-purple-600" />
+              <Card className="hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 border-2 hover:border-purple-200">
+                <CardHeader className="pb-4">
+                  <div className="flex items-center space-x-4">
+                    <div className="w-16 h-16 bg-gradient-to-r from-purple-500 to-violet-600 rounded-xl flex items-center justify-center shadow-lg">
+                      <BarChart3 className="w-8 h-8 text-white" />
                     </div>
-                    <CardTitle className="text-xl">STUDY TOOLS</CardTitle>
+                    <CardTitle className="text-2xl font-black text-gray-900 tracking-wide">STUDY TOOLS</CardTitle>
                   </div>
                 </CardHeader>
                 <CardContent>
-                  <ul className="space-y-2">
-                    <li className="flex items-center space-x-2">
-                      <CheckCircle className="w-4 h-4 text-green-600" />
-                      <span>Personalized Study Plans</span>
+                  <ul className="space-y-3">
+                    <li className="flex items-center space-x-3">
+                      <CheckCircle className="w-5 h-5 text-green-600 flex-shrink-0" />
+                      <span className="font-semibold text-gray-800">Personalized Study Plans</span>
                     </li>
-                    <li className="flex items-center space-x-2">
-                      <CheckCircle className="w-4 h-4 text-green-600" />
-                      <span>Smart Revision Schedule</span>
+                    <li className="flex items-center space-x-3">
+                      <CheckCircle className="w-5 h-5 text-green-600 flex-shrink-0" />
+                      <span className="font-semibold text-gray-800">Smart Revision Schedule</span>
                     </li>
-                    <li className="flex items-center space-x-2">
-                      <CheckCircle className="w-4 h-4 text-green-600" />
-                      <span>Topic Mastery Checklists</span>
+                    <li className="flex items-center space-x-3">
+                      <CheckCircle className="w-5 h-5 text-green-600 flex-shrink-0" />
+                      <span className="font-semibold text-gray-800">Topic Mastery Checklists</span>
                     </li>
-                    <li className="flex items-center space-x-2">
-                      <CheckCircle className="w-4 h-4 text-green-600" />
-                      <span>Exam Countdown Timer</span>
+                    <li className="flex items-center space-x-3">
+                      <CheckCircle className="w-5 h-5 text-green-600 flex-shrink-0" />
+                      <span className="font-semibold text-gray-800">Exam Countdown Timer</span>
                     </li>
                   </ul>
                 </CardContent>
               </Card>
 
               {/* Progress Tracking */}
-              <Card className="hover:shadow-xl transition-shadow">
-                <CardHeader>
-                  <div className="flex items-center space-x-3">
-                    <div className="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center">
-                      <BarChart3 className="w-6 h-6 text-green-600" />
+              <Card className="hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 border-2 hover:border-green-200">
+                <CardHeader className="pb-4">
+                  <div className="flex items-center space-x-4">
+                    <div className="w-16 h-16 bg-gradient-to-r from-green-500 to-teal-600 rounded-xl flex items-center justify-center shadow-lg">
+                      <BarChart3 className="w-8 h-8 text-white" />
                     </div>
-                    <CardTitle className="text-xl">PROGRESS TRACKING</CardTitle>
+                    <CardTitle className="text-2xl font-black text-gray-900 tracking-wide">PROGRESS TRACKING</CardTitle>
                   </div>
                 </CardHeader>
                 <CardContent>
-                  <ul className="space-y-2">
-                    <li className="flex items-center space-x-2">
-                      <CheckCircle className="w-4 h-4 text-green-600" />
-                      <span>Automated Progress Dashboard</span>
+                  <ul className="space-y-3">
+                    <li className="flex items-center space-x-3">
+                      <CheckCircle className="w-5 h-5 text-green-600 flex-shrink-0" />
+                      <span className="font-semibold text-gray-800">Automated Progress Dashboard</span>
                     </li>
-                    <li className="flex items-center space-x-2">
-                      <CheckCircle className="w-4 h-4 text-green-600" />
-                      <span>Performance Analytics</span>
+                    <li className="flex items-center space-x-3">
+                      <CheckCircle className="w-5 h-5 text-green-600 flex-shrink-0" />
+                      <span className="font-semibold text-gray-800">Performance Analytics</span>
                     </li>
-                    <li className="flex items-center space-x-2">
-                      <CheckCircle className="w-4 h-4 text-green-600" />
-                      <span>Parent/Student Reports</span>
+                    <li className="flex items-center space-x-3">
+                      <CheckCircle className="w-5 h-5 text-green-600 flex-shrink-0" />
+                      <span className="font-semibold text-gray-800">Parent/Student Reports</span>
                     </li>
-                    <li className="flex items-center space-x-2">
-                      <CheckCircle className="w-4 h-4 text-green-600" />
-                      <span>Weakness Identification</span>
+                    <li className="flex items-center space-x-3">
+                      <CheckCircle className="w-5 h-5 text-green-600 flex-shrink-0" />
+                      <span className="font-semibold text-gray-800">Weakness Identification</span>
                     </li>
                   </ul>
                 </CardContent>
@@ -317,7 +317,7 @@ export default function SelfStudyPage() {
               {/* Course Grid */}
               <div className="lg:w-3/4">
                 <div className="flex justify-between items-center mb-8">
-                  <h2 className="text-2xl font-bold">Available Courses</h2>
+                  <h2 className="text-2xl font-bold text-gray-900">Available Courses</h2>
                   <select className="p-2 border rounded-md">
                     <option>Most Popular</option>
                     <option>Newest First</option>
@@ -417,7 +417,7 @@ export default function SelfStudyPage() {
               <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
                 Success Stories
               </h2>
-              <p className="text-lg text-gray-600">
+              <p className="text-lg text-gray-600 font-medium">
                 Real results from our self-study students
               </p>
             </div>
@@ -463,7 +463,7 @@ export default function SelfStudyPage() {
                     </Badge>
 
                     <blockquote className="text-gray-700 mb-4 italic">
-                      "{story.quote}"
+                      &ldquo;{story.quote}&rdquo;
                     </blockquote>
 
                     <div className="space-y-1">
@@ -484,7 +484,7 @@ export default function SelfStudyPage() {
         {/* CTA Section */}
         <section className="py-20 px-4 bg-white">
           <div className="container mx-auto text-center">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6 leading-tight">
               Ready to take control of your studies with a proven system?
             </h2>
 

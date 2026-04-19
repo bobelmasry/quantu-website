@@ -93,9 +93,16 @@ function Carousel({
     setApi(api)
   }, [api, setApi])
 
+  const initializedRef = React.useRef(false)
+
   React.useEffect(() => {
     if (!api) return
-    onSelect(api)
+
+    if (!initializedRef.current) {
+      onSelect(api)
+      initializedRef.current = true
+    }
+
     api.on("reInit", onSelect)
     api.on("select", onSelect)
 

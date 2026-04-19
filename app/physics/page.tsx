@@ -5,7 +5,7 @@ import { Footer } from "@/components/footer";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { Zap, BookOpen, FileText, Video, Award, Atom } from "lucide-react";
+import { Zap, BookOpen, FileText, Video, Award } from "lucide-react";
 
 export default function PhysicsPage() {
   return (
@@ -145,7 +145,7 @@ export default function PhysicsPage() {
                   <CardTitle className="text-lg">Forces & Motion</CardTitle>
                 </CardHeader>
                 <CardContent>
-                  <p className="text-gray-600 mb-4">Newton's laws and kinematics</p>
+                  <p className="text-gray-600 mb-4">Newton&apos;s laws and kinematics</p>
                   <Button variant="outline" size="sm" className="w-full">Practice Questions</Button>
                 </CardContent>
               </Card>

@@ -5,7 +5,7 @@ import { Footer } from "@/components/footer";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { PenTool, BookOpen, FileText, Video, Award, MessageSquare } from "lucide-react";
+import { PenTool, BookOpen, FileText, Award, MessageSquare } from "lucide-react";
 
 export default function EnglishPage() {
   return (

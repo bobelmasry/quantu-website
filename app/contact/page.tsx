@@ -3,7 +3,7 @@
 import { Header } from "@/components/header";
 import { Footer } from "@/components/footer";
 import { Button } from "@/components/ui/button";
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { Card, CardContent } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { MapPin, Phone, Mail, Clock, Send } from "lucide-react";
@@ -34,7 +34,7 @@ export default function ContactPage() {
             </h1>
             <p className="text-xl text-gray-600 max-w-2xl mx-auto">
               Have questions about our courses? Need help with your studies?
-              We're here to help you succeed in your IGCSE and IAL journey.
+              We&apos;re here to help you succeed in your IGCSE and IAL journey.
             </p>
           </div>
         </section>

@@ -100,7 +100,7 @@ export default function AboutPage() {
               </div>
 
               <p className="text-lg text-gray-600 leading-relaxed">
-                Today, Quantu-IG is more than a website — it's a movement for high-achieving students across
+                Today, Quantu-IG is more than a website &mdash; it&apos;s a movement for high-achieving students across
                 Cambridge, Pearson Edexcel, and Oxford exam boards.
               </p>
             </div>
@@ -243,9 +243,9 @@ export default function AboutPage() {
         <section className="py-20 px-4 bg-gradient-to-r from-blue-50 to-purple-50">
           <div className="container mx-auto text-center">
             <Badge className="mb-4">Meet the Ecosystem (Mini Overview)</Badge>
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-12">
-              What's Inside Quantu-IG?
-            </h2>
+              <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-12">
+                What&apos;s Inside Quantu-IG?
+              </h2>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
               <Card className="hover:shadow-xl transition-shadow">
@@ -284,8 +284,8 @@ export default function AboutPage() {
             </h2>
             <p className="text-xl text-gray-600 mb-12 max-w-3xl mx-auto">
               We partner with schools, learning centers, and institutions to provide custom packages,
-              bulk licenses, and premium institutional access. If you're an educator or institution
-              looking to empower your students → Let's collaborate.
+              bulk licenses, and premium institutional access. If you&apos;re an educator or institution
+              looking to empower your students &rarr; Let&apos;s collaborate.
             </p>
 
             <Button size="lg" className="bg-gradient-to-r from-green-600 to-blue-600 hover:from-green-700 hover:to-blue-700">
